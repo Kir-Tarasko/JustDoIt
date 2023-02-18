@@ -13,7 +13,7 @@
 		95B64DB3299C0B2E00832C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B64DB1299C0B2E00832C39 /* Main.storyboard */; };
 		95B64DB5299C0B2F00832C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95B64DB4299C0B2F00832C39 /* Assets.xcassets */; };
 		95B64DB8299C0B2F00832C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B64DB6299C0B2F00832C39 /* LaunchScreen.storyboard */; };
-		95B64DC0299C2C1300832C39 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B64DBF299C2C1300832C39 /* NewTaskViewController.swift */; };
+		95B64DC229A0BFD500832C39 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B64DC129A0BFD500832C39 /* NewTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		95B64DB4299C0B2F00832C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95B64DB7299C0B2F00832C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95B64DB9299C0B2F00832C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95B64DBF299C2C1300832C39 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		95B64DC129A0BFD500832C39 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				95B64DAB299C0B2E00832C39 /* AppDelegate.swift */,
 				95B64DAD299C0B2E00832C39 /* SceneDelegate.swift */,
 				95B64DAF299C0B2E00832C39 /* TaskListViewController.swift */,
-				95B64DBF299C2C1300832C39 /* NewTaskViewController.swift */,
+				95B64DC129A0BFD500832C39 /* NewTaskViewController.swift */,
 				95B64DB1299C0B2E00832C39 /* Main.storyboard */,
 				95B64DB4299C0B2F00832C39 /* Assets.xcassets */,
 				95B64DB6299C0B2F00832C39 /* LaunchScreen.storyboard */,
@@ -143,8 +143,8 @@
 			files = (
 				95B64DB0299C0B2E00832C39 /* TaskListViewController.swift in Sources */,
 				95B64DAC299C0B2E00832C39 /* AppDelegate.swift in Sources */,
-				95B64DC0299C2C1300832C39 /* NewTaskViewController.swift in Sources */,
 				95B64DAE299C0B2E00832C39 /* SceneDelegate.swift in Sources */,
+				95B64DC229A0BFD500832C39 /* NewTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

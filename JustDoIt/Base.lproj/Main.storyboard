@@ -120,6 +120,9 @@
                                                                 <integer key="value" value="8"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="cancelButtonPressed" destination="PVZ-vl-Pkf" eventType="touchUpInside" id="PSg-HD-yfG"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="245" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhG-VA-mCT">
                                                         <rect key="frame" x="78" y="0.0" width="283" height="36"/>
@@ -134,6 +137,9 @@
                                                                 <integer key="value" value="8"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="doneButtonPressed" destination="PVZ-vl-Pkf" eventType="touchUpInside" id="cqV-qB-ocp"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -154,6 +160,12 @@
                             <constraint firstItem="PUk-n3-3il" firstAttribute="bottom" secondItem="htA-WP-qIn" secondAttribute="bottom" id="iJ5-ju-CQY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="iJ5-ju-CQY" id="nNX-hU-cHR"/>
+                        <outlet property="doneButton" destination="VhG-VA-mCT" id="x42-hb-u6o"/>
+                        <outlet property="prioritySegmentedControl" destination="hTY-PN-SQu" id="BbE-Zd-Jtm"/>
+                        <outlet property="taskTextView" destination="tZe-Ts-cNp" id="Ubn-bX-k5O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyh-na-ILT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
