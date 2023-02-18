@@ -15,10 +15,11 @@ class NewTaskViewController: UIViewController {
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
+    var task: Task?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTextView()
-        doneButton.isHidden = true
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillShow),
@@ -30,15 +31,28 @@ class NewTaskViewController: UIViewController {
     
     
     @IBAction func doneButtonPressed() {
+        guard let title = taskTextView.text, !title.isEmpty else { return }
+        let priority = Int16(prioritySegmentedControl.selectedSegmentIndex)
+        if let task = task {
+            StorageManager.shared.edit(task: task, with: title, and: priority)
+        } else {
+            StorageManager.shared.saveTask(withTitle: title, andPriority: priority)
+        }
         dismiss(animated: true)
     }
+    
     @IBAction func cancelButtonPressed() {
         dismiss(animated: true)
     }
     
     private func setupTextView() {
         taskTextView.becomeFirstResponder()
-        taskTextView.textColor = .white
+        if let task = task {
+            taskTextView.text = task.title
+            prioritySegmentedControl.selectedSegmentIndex = Int(task.priority)
+        } else {
+            doneButton.isHidden = true
+        }
     }
     
 }

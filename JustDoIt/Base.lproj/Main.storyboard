@@ -33,6 +33,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="PVZ-vl-Pkf" kind="presentation" identifier="editTask" id="rSM-YO-pag"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -62,7 +65,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="245" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y86-jD-lHp">
-                                <rect key="frame" x="16" y="79" width="361" height="313.33333333333331"/>
+                                <rect key="frame" x="16" y="79" width="361" height="313.33333333333326"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psc-Jj-RMu">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="25"/>
@@ -160,6 +163,7 @@
                             <constraint firstItem="PUk-n3-3il" firstAttribute="bottom" secondItem="htA-WP-qIn" secondAttribute="bottom" id="iJ5-ju-CQY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Hft-ms-cNL"/>
                     <connections>
                         <outlet property="bottomConstraint" destination="iJ5-ju-CQY" id="nNX-hU-cHR"/>
                         <outlet property="doneButton" destination="VhG-VA-mCT" id="x42-hb-u6o"/>
@@ -188,6 +192,9 @@
             <point key="canvasLocation" x="-346" y="120"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rSM-YO-pag"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

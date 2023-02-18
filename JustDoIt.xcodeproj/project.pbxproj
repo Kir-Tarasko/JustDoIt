@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95A7143529A0C985009BB1F7 /* JustDoIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95A7143329A0C985009BB1F7 /* JustDoIt.xcdatamodeld */; };
+		95A7143829A0CAB7009BB1F7 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7143729A0CAB7009BB1F7 /* StorageManager.swift */; };
 		95B64DAC299C0B2E00832C39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B64DAB299C0B2E00832C39 /* AppDelegate.swift */; };
 		95B64DAE299C0B2E00832C39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B64DAD299C0B2E00832C39 /* SceneDelegate.swift */; };
 		95B64DB0299C0B2E00832C39 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B64DAF299C0B2E00832C39 /* TaskListViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95A7143429A0C985009BB1F7 /* JustDoIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JustDoIt.xcdatamodel; sourceTree = "<group>"; };
+		95A7143729A0CAB7009BB1F7 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		95B64DA8299C0B2E00832C39 /* JustDoIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustDoIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B64DAB299C0B2E00832C39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95B64DAD299C0B2E00832C39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95A7143229A0C95E009BB1F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95A7143329A0C985009BB1F7 /* JustDoIt.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95A7143629A0CAA1009BB1F7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				95A7143729A0CAB7009BB1F7 /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		95B64D9F299C0B2E00832C39 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +82,8 @@
 				95B64DAD299C0B2E00832C39 /* SceneDelegate.swift */,
 				95B64DAF299C0B2E00832C39 /* TaskListViewController.swift */,
 				95B64DC129A0BFD500832C39 /* NewTaskViewController.swift */,
+				95A7143629A0CAA1009BB1F7 /* Services */,
+				95A7143229A0C95E009BB1F7 /* Models */,
 				95B64DB1299C0B2E00832C39 /* Main.storyboard */,
 				95B64DB4299C0B2F00832C39 /* Assets.xcassets */,
 				95B64DB6299C0B2F00832C39 /* LaunchScreen.storyboard */,
@@ -143,6 +165,8 @@
 			files = (
 				95B64DB0299C0B2E00832C39 /* TaskListViewController.swift in Sources */,
 				95B64DAC299C0B2E00832C39 /* AppDelegate.swift in Sources */,
+				95A7143529A0C985009BB1F7 /* JustDoIt.xcdatamodeld in Sources */,
+				95A7143829A0CAB7009BB1F7 /* StorageManager.swift in Sources */,
 				95B64DAE299C0B2E00832C39 /* SceneDelegate.swift in Sources */,
 				95B64DC229A0BFD500832C39 /* NewTaskViewController.swift in Sources */,
 			);
@@ -370,6 +394,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		95A7143329A0C985009BB1F7 /* JustDoIt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				95A7143429A0C985009BB1F7 /* JustDoIt.xcdatamodel */,
+			);
+			currentVersion = 95A7143429A0C985009BB1F7 /* JustDoIt.xcdatamodel */;
+			path = JustDoIt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 95B64DA0299C0B2E00832C39 /* Project object */;
 }
