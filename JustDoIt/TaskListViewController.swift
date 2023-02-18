@@ -96,7 +96,7 @@ class TaskListViewController: UITableViewController {
     private func getTask(at indexPath: IndexPath?) -> Task? {
         if let indexPath = indexPath {
             return
-            fetchedResultsController.object(at: indexPath) as? Task
+                fetchedResultsController.object(at: indexPath) as? Task
         }
         return nil
     }
@@ -124,7 +124,7 @@ extension TaskListViewController {
             }
         }
         
-        deleteAction.image = #imageLiteral(resourceName: "Trash")
+        deleteAction.image = UIImage(systemName: "trash")
         
         return UISwipeActionsConfiguration(actions: [deleteAction])
     }
@@ -138,7 +138,6 @@ extension TaskListViewController {
         }
         
         doneAction.image = UIImage(systemName: "checkmark")
-        doneAction.image = #imageLiteral(resourceName: "Check")
         doneAction.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         
         return UISwipeActionsConfiguration(actions: [doneAction])
