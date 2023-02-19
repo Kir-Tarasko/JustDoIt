@@ -65,7 +65,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="245" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y86-jD-lHp">
-                                <rect key="frame" x="16" y="79" width="361" height="313.33333333333326"/>
+                                <rect key="frame" x="16" y="79" width="361" height="313.33333333333331"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psc-Jj-RMu">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="25"/>

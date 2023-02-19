@@ -21,10 +21,10 @@ class NewTaskViewController: UIViewController {
         super.viewDidLoad()
         setupTextView()
         
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(keyboardWillShow),
-                                               name: UIResponder.keyboardDidShowNotification,
-                                               object: nil)
+    NotificationCenter.default.addObserver(self,
+        selector:#selector(keyboardWillShow),
+        name: UIResponder.keyboardWillShowNotification,
+        object: nil)
     }
     
     
