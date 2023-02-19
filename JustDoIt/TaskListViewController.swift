@@ -131,7 +131,7 @@ extension TaskListViewController {
     
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let doneAction = UIContextualAction(style: .normal, title: "Done") { _, _, isDone in
-            if let task = self.fetchedResultsController.object(at: indexPath) as? Task {
+            if let task = self.getTask(at: indexPath) {
                 StorageManager.shared.done(task: task)
             }
             isDone(true)
